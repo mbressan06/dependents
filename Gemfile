@@ -14,10 +14,14 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise'
 gem 'paperclip'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
+gem 'jasny-bootstrap-rails'
 gem 'quiet_assets'
 
 gem 'cpf_cnpj', '~> 0.2.1'
 gem 'rails-i18n', github: 'svenfuchs/rails-i18n', branch: 'rails-4-x' # For 4.x
+gem 'devise-async'
+gem 'sidekiq'
+
 
 group :development, :test do
     gem 'byebug'

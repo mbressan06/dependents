@@ -38,7 +38,7 @@
       <ul class="nav navbar-nav navbar-right">
         <% if current_user %>
           <li>
-            <%= link_to "Olá #{current_user.email}", "#" %>
+            <%= link_to "Olá #{current_user.email}", edit_user_registration_path %>
           </li>
           <li>
             <%= link_to "Sair", destroy_user_session_path, :method => :delete %>

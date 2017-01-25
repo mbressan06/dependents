@@ -8,7 +8,7 @@
   </div>
   <div class="field">
       <%= f.label :document %><br>
-      <%= f.text_field :document %>
+      <%= f.text_field :document, :data => {:mask=> '999.999.999-99'} %>
   </div>
 
   <div class="field">
