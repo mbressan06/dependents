@@ -1,0 +1,42 @@
+pt-BR:
+  login_validation_error: "deve ser somente números, letras e underscore '-'"
+  password_update_error: Senha atual inválida ou confirmação não corresponde.
+  update_ok:    Atualizado com sucesso!
+  system_admin: Administrador do sistema
+  regular: Somente Consulta
+  consultant: Consultor
+  commercial: Comercial
+  sales: Pré-vendas
+  manager: Gerente de vendas
+
+  errors:
+    messages:
+      in_between: "deve ter entre %{min} e %{max}"
+      spoofed_media_type: "tem uma extensão que não corresponde ao seu conteúdo"
+  number:
+    human:
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one:   "Byte"
+            other: "Bytes"
+          kb: "KB"
+          mb: "MB"
+          gb: "GB"
+          tb: "TB"
+  date:
+    month_names:
+      - ~
+      - Janeiro
+      - Fevereiro
+      - Março
+      - Abril
+      - Maio
+      - Junho
+      - Julho
+      - Agosto
+      - Setembro
+      - Outubro
+      - Novembro
+      - Dezembro

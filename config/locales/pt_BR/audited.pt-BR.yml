@@ -1,0 +1,10 @@
+pt-BR:
+  audit:
+    actions:
+      update: Atualizou
+      create: Criou
+      destroy: Apagou
+      system:
+        update: Atualizada
+        create: Criada
+        destroy: Apagada

@@ -1,0 +1,242 @@
+pt-BR:
+  activerecord:
+    attributes:
+      user:
+        name: Nome
+        password: Senha
+        current_password: Senha Atual
+        password_confirmation: Confirmação de senha
+        email: E-mail
+        login: Login ou E-mail
+      appointment:
+        title: Título
+        start_time: Início
+        end_time: Fim
+        prospect_id: Oportunidade
+        user: Consultor
+      task:
+        title: Assunto
+        description: Descrição
+        deadline: Prazo
+        prospect_id: Oportunidade
+        task_type_id: Tipo da Tarefa
+        prospect_or_account_id: Conta ou Oportunidade
+        statuses:
+          pending: Pendente
+          processing: Em processo
+          complete: Completa
+          scheduled: Agendada
+        task_type_for_account: Tipo de tarefa para Conta
+      prospect:
+        account: Conta
+        account_id: Conta
+        description: Descrição
+        comments: Comentários
+        employees_number: Funcionários
+        lives_number: Número de Vidas
+        dependents_number: Dependentes
+        contract_birthday: Aniversário
+        actual_billing: Fatura Atual
+        probability: Probabilidade
+        value: Valor
+        title: Título
+        deadline: Fechamento
+        negotiation_phase_id: Negociação
+        business_type_id: Tipo de negócio
+        consultant_id: Consultor
+        clerk_id: Atendente
+        contract_type_id: Tipo de Contrato
+      attached_document:
+        file: Arquivo
+      account:
+        name: Nome da Conta
+        company_name: Razão social
+        contact_name: Nome do Contato
+        cnpj: CNPJ
+        document_type: Tipo do documento
+        document: Documento
+        city: Cidade
+        country: País
+        comments: Comentários
+        email:
+        sector: Setor
+        employees_number: Qte de Funcionários
+        lives_number: Qte de Vidas
+        phone: Telefone
+        mobile: Celular
+        postal_code: CEP
+        state: Estado
+        address_street: Logradouro
+        address_complement: Complemento
+        neighborhood: Bairro
+        website: Website
+        address_number: Número
+        clerk_id: Atendente
+        consultant_id: Consultor
+        indication: Indicação
+        prospection_font_id: Fonte da prospecção
+      negotiation_phase:
+        name: Nome
+      provider:
+        name: Nome
+        kind: Tipo
+        description: Descrição
+        compulsory: Compulsório
+        business_types: Tipo de negócio
+        business_type_ids: Tipos de negócio
+        range_lives_for_price_ids: Vidas
+        holder_quantity_description_ids: Qte de Titulares
+        coparcenary_type_ids: Tipos de Coparticipação
+        regional_price_ids: Preço Regional
+        compulsory_type_ids: Compulsoriedade
+        compulsory_types: Compulsoriedade
+        contract_modalities: Modalidade de Contrato
+      plan:
+        name: Nome
+        description: Descrição
+        provider: Provedor
+        provider_id: Provedor
+        accommodation_types: Tipo de Acomodação
+        accommodation_type_ids: Tipo de Acomodação
+        plan_classifications: Classificação
+        plan_classification_ids: Classificação
+      infrastructure_service_type:
+        name: Nome
+      hospital:
+        name: Nome
+        description: Descrição
+        postal_code: CEP
+        address_street: Logradouro
+        address_number: Número
+        address_complement: Complemento
+        address_zone: Zona
+        address_city: Cidade
+        address_state: Estado
+        neighborhood: Bairro
+        country: País
+      labor:
+        name: Nome
+        description: Descrição
+        postal_code: CEP
+        address_street: Logradouro
+        address_number: Número
+        address_complement: Complemento
+        address_zone: Zona
+        address_city: Cidade
+        address_state: Estado
+        neighborhood: Bairro
+        country: País
+      price_cube:
+        age_group_price_attributes: foo
+        age_group_price_id: Preço por Idade
+        plan_id: Plano
+        contract_modality_id: Modalidade de Contrato
+        accommodation_type_id: Tipo de Acomodação
+        provider_id: Provedor
+        range_lives_for_price_id: Range de Idade
+        compulsory: Compulsório
+        compulsory_type_id: Compulsoriedade
+        compulsory_type_ids: Compulsoriedade
+        compulsory_types: Compulsoriedade
+        description: Descrição
+        coparcenary_type_id: Tipo de Coparticipação
+        holder_quantity_description_id: Qte de Titulares
+      range_lives_for_price:
+        name: Nome
+      contract_modality:
+        name: Nome
+      holder_quantity_description:
+        description: Descrição
+      regional_price:
+        name: Nome
+      coparcenary_type:
+        percentual: Percentual
+      competitive_differential:
+        service: Serviço
+        provider_id: Provedor
+      contract_rule:
+        provider_id: Provedor
+        contract_type_id: Contrato
+        pricing_type_ids: Precificação
+        membership_fee: Taxa de Adesão
+        min_holder_permit: Mínimo de Titulares Permitidos
+        range_lives_for_price_ids: Vidas
+        fgts_membership: Tipo de Contratação
+        acceptance: Aceitação
+        acceptance_ages: '% aceitação idades = ou > a 59 anos'
+      executive_differential:
+        plan_id: Plano
+        benefit: Benefício
+        characteristic: Característica
+      beneficiary_description:
+        locate: LOCALIDADE
+        company: EMPRESA
+        name: NOME
+        role: FUNÇÃO
+        condition: CONDIÇÃO
+        kinship: PARENTESCO
+        gender: SEXO
+        birthday: DATA DE NASCIMENTO
+        age: IDADE
+        age_group: FAIXA ETÁRIA
+        actual_provider: PROVEDOR ATUAL
+        plan_category: CATEGORIA DE PLANO
+        actual_value: PRÊMIO ATUAL
+        status: STATUS
+        cid: CID
+        start_at: DATA INÍCIO
+        finish_at: DATA FIM
+        note: OBSERVAÇÃO
+        accommodation_type_id: PADRÃO DE ACOMODAÇÃO
+        quotation_request_id: SOLICITAÇÃO DE COTAÇÃO
+      quotation_request:
+        processing: Processando
+        process_errors: Erros de processamento
+        prospect_id: Oportunidade
+        attached_document_id: Anexo de Solicitação
+      proposal:
+        prospect_id: Oportunidade
+        note: Obsevações
+        deadline: Prazo
+        statuses:
+          on_elaboration: Em Elaboração
+          waiting_providers_response: Aguardando retorno dos Provedores
+          cotations_recived: Cotações recebidas
+          done: Pronta
+
+    models:
+      user: Usuário
+      conversation: Mensagem
+      appointment: Compromisso
+      task: Tarefa
+      account: Conta
+      business_type: Tipo de negócio
+      prospect: Oportunidade
+      provider: Provedor
+      plan: Plano
+      infrastructure_service_type: Tipo de Infra/Serviço
+      accredited_network: Rede Credenciada
+      hospital: Hospital
+      labor: Laboratório
+      age_group_price: Preço por Idade
+      price_cube: Cubo de Preços
+      range_lives_for_price: Qte de Vidas
+      contract_modality: Modalidade de Contrato
+      holder_quantity_description: Qte de Titulares
+      regional_price: Preço Regional
+      coparcenary_type: Tipo de Coparticipação
+      competitive_differential: Diferencial Competitivo
+      contract_rule: Regras de Contratação
+      pricing_type: Precificação
+      contract_type: Contrato
+      executive_differential: Diferencial Executivo
+      beneficiary_description: Descritivo de Benefíciarios
+      quotation_request: Solicitação de Cotação
+      proposal: Proposta
+
+    errors:
+      models:
+        account:
+          attributes:
+            cnpj:
+              invalid_cnpj: Inválido

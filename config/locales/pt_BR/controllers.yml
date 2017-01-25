@@ -1,0 +1,170 @@
+pt-BR:
+  profile:
+    messages:
+      create:  Novo perfil criado com sucesso, o novo usuário receberá uma notifição por email!
+      update:  Perfil atualizado com sucesso!
+      destroy:
+        success: Perfil apagado com sucesso!
+        error:   Este perfil está ativo, favor desativar antes de excluir!
+  appointment:
+    messages:
+      validate_timing_error: Início não pode ser maior que fim
+      delete: Compromisso apagado com sucesso!
+      move_error: Desculpe aconteceu um erro tente novamente por favor.
+  task:
+    messages:
+      delete: Tarefa apagada com sucesso!
+      create: Tarefa criada com sucesso!
+      update: Tarefa atualizada com sucesso!
+      account_type_task_invalid: só pode ser do tipo Coleta de dados!
+      prospect_or_account_id: Obrigatório
+  account:
+    messages:
+      delete: Conta apagada com sucesso!
+      create: Conta criada com sucesso!
+      update: Conta atualizada com sucesso!
+      invalid: inválido
+  prospect:
+    messages:
+      delete: Oportunidade apagada com sucesso!
+      create: Oportunidade criada com sucesso!
+      update: Oportunidade atualizada com sucesso!
+      not_authorized: Você só pode alterar o campo fase de negociação
+  attached_document:
+    messages:
+      delete: Anexo apagado com sucesso!
+      create: Anexo criado com sucesso!
+      update: Anexo atualizado com sucesso!
+      create_error: Desculpe aconteceu um erro tente novamente.
+      size_error: Não pode ser maior que 3 Megabytes.
+  business_type:
+    messages:
+      delete: Tipo de negócio apagado com sucesso!
+      create: Tipo de negócio criado com sucesso!
+      update: Tipo de negócio atualizado com sucesso!
+  provider:
+    messages:
+      delete: Provedor apagado com sucesso!
+      create: Provedor criado com sucesso!
+      update: Provedor atualizado com sucesso!
+  comments:
+    messages:
+      delete: Comentário apagado com sucesso!
+      create: Comentário criado com sucesso!
+      create_error: Desculpe aconteceu um erro tente novamente.
+      update: Comentário atualizado com sucesso!
+  note:
+    messages:
+      delete: Nota apagada com sucesso!
+      create: Nota criada com sucesso!
+      create_error: Desculpe aconteceu um erro tente novamente.
+      update: Nota atualizada com sucesso!
+  hospital:
+    messages:
+      delete: Hospital apagado com sucesso!
+      create: Hospital criado com sucesso!
+      create_error: Desculpe aconteceu um erro tente novamente.
+      update: Hospital atualizado com sucesso!
+  labor:
+    messages:
+      delete: Laboratório apagado com sucesso!
+      create: Laboratório criado com sucesso!
+      create_error: Desculpe aconteceu um erro tente novamente.
+      update: Laboratório atualizado com sucesso!
+  contact:
+    messages:
+      delete: Contato apagado com sucesso!
+      create: Contato criado com sucesso!
+      create_error: Desculpe aconteceu um erro tente novamente.
+      update: Contato atualizado com sucesso!
+  price_cube:
+    messages:
+      delete: Cubo apagado com sucesso!
+      create: Cubo criado com sucesso!
+      create_error: Desculpe aconteceu um erro tente novamente.
+      update: Cubo atualizado com sucesso!
+      destroy: Cubo apagado com sucesso!
+  range_lives_for_price:
+    messages:
+      delete: Qte de Vidas apagado com sucesso!
+      create: Qte de Vidas criado com sucesso!
+      create_error: Desculpe aconteceu um erro tente novamente.
+      update: Qte de Vidas atualizado com sucesso!
+      destroy: Qte de Vidas apagado com sucesso!
+  regional_price:
+    messages:
+      delete: Preço regional apagado com sucesso!
+      create: Preço regional criado com sucesso!
+      create_error: Desculpe aconteceu um erro tente novamente.
+      update: Preço regional atualizado com sucesso!
+      destroy: Preço regional apagado com sucesso!
+  contract_modality:
+    messages:
+      delete: Modalidade de Contrato apagada com sucesso!
+      create: Modalidade de Contrato criada com sucesso!
+      create_error: Desculpe aconteceu um erro tente novamente.
+      update: Modalidade de Contrato atualizada com sucesso!
+      destroy: Modalidade de Contrato apagada com sucesso!
+  holder_quantity_description:
+    messages:
+      delete: Quantidade de Titulares apagada com sucesso!
+      create: Quantidade de Titulares criada com sucesso!
+      create_error: Desculpe aconteceu um erro tente novamente.
+      update: Quantidade de Titulares atualizada com sucesso!
+      destroy: Quantidade de Titulares apagada com sucesso!
+  coparcenary_type:
+    messages:
+      delete: Tipo de Coparticipação apagada com sucesso!
+      create: Tipo de Coparticipação criada com sucesso!
+      create_error: Desculpe aconteceu um erro tente novamente.
+      update: Tipo de Coparticipação atualizada com sucesso!
+      destroy: Tipo de Coparticipação apagada com sucesso!
+  plan:
+    messages:
+      delete: Plano apagado com sucesso!
+      create: Plano criado com sucesso!
+      create_error: Desculpe aconteceu um erro tente novamente.
+      update: Plano atualizado com sucesso!
+      destroy: Plano apagado com sucesso!
+  executive_differential:
+    messages:
+      delete: Diferencial Executivo apagado com sucesso!
+      create: Diferencial Executivo criado com sucesso!
+      create_error: Desculpe aconteceu um erro tente novamente.
+      update: Diferencial Executivo atualizado com sucesso!
+      destroy: Diferencial Executivo apagado com sucesso!
+  competitive_differential:
+    messages:
+      delete: Diferencial Competitivo apagado com sucesso!
+      create: Diferencial Competitivo criado com sucesso!
+      create_error: Desculpe aconteceu um erro tente novamente.
+      update: Diferencial Competitivo atualizado com sucesso!
+      destroy: Diferencial Competitivo apagado com sucesso!
+  contract_rule:
+    messages:
+      delete: Regra de Contratação apagada com sucesso!
+      create: Regra de Contratação criada com sucesso!
+      create_error: Desculpe aconteceu um erro tente novamente.
+      update: Regra de Contratação atualizada com sucesso!
+      destroy: Regra de Contratação apagada com sucesso!
+  quotation_request:
+    messages:
+      delete: Solicitação de Cotação apagada com sucesso!
+      create: Solicitação de Cotação criada com sucesso!
+      create_error: Desculpe aconteceu um erro tente novamente.
+      update: Solicitação de Cotação atualizada com sucesso!
+      destroy: Solicitação de Cotação apagada com sucesso!
+  proposal:
+    messages:
+      delete: Proposta apagada com sucesso!
+      create: Proposta criada com sucesso!
+      create_error: Desculpe aconteceu um erro tente novamente.
+      update: Proposta atualizada com sucesso!
+      destroy: Proposta apagada com sucesso!
+  accredited_network:
+    messages:
+      delete: Associação apagada com sucesso!
+      create: Associação criada com sucesso!
+      create_error: Desculpe aconteceu um erro tente novamente.
+      update: Associação atualizada com sucesso!
+      destroy: Associação apagada com sucesso!

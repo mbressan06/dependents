@@ -1,0 +1,11 @@
+---
+pt-BR:
+  mailbox:
+    new: Nova
+    inbox: Entrada
+    sent: Enviados
+    trash: Lixeira
+
+    convesations:
+      messages:
+        success: Mensagem enviada com sucesso!

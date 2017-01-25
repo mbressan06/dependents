@@ -1,0 +1,5 @@
+pt-BR:
+ pundit:
+   default: 'Você não tem previlégios para esta ação'
+   post_policy:
+    destroy?: 'Você não tem previlégios para apagar'
