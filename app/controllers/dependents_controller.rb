@@ -63,7 +63,7 @@ private
       puts action_name
       if action_name == 'edit' or action_name == 'destroy' or action_name == 'show' or action_name == 'new'
         flash[:notice] = 'Você não é o responsável pelo cadastro.'
-        redirect_to root_path if @dependent.user_id != current_user.id
+        #redirect_to root_path if @dependent.user_id != current_user.id
       end
     end
 # Use callbacks to share common setup or constraints between actions.
