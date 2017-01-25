@@ -1,4 +1,5 @@
 class Dependent < ActiveRecord::Base
+  belongs_to :user
   validates :name, :kinship_type, presence: true
 
   # PaperClip

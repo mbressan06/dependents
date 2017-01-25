@@ -1,31 +1,27 @@
 class DependentsController < ApplicationController
   before_action :set_dependent, only: [:show, :edit, :update, :destroy]
-
-  # GET /dependents
+  before_action :user_login, only: [:new, :create, :edit, :destroy]
+# GET /dependents
   # GET /dependents.json
   def index
     @dependents = Dependent.all
   end
-
-  # GET /dependents/1
+# GET /dependents/1
   # GET /dependents/1.json
   def show
   end
-
-  # GET /dependents/new
+# GET /dependents/new
   def new
     @dependent = Dependent.new
   end
-
-  # GET /dependents/1/edit
+# GET /dependents/1/edit
   def edit
   end
-
-  # POST /dependents
+# POST /dependents
   # POST /dependents.json
   def create
     @dependent = Dependent.new(dependent_params)
-
+    @dependent.user_id = current_user.id
     respond_to do |format|
       if @dependent.save
         format.html { redirect_to @dependent, notice: 'Dependent was successfully created.' }
@@ -36,8 +32,7 @@ class DependentsController < ApplicationController
       end
     end
   end
-
-  # PATCH/PUT /dependents/1
+# PATCH/PUT /dependents/1
   # PATCH/PUT /dependents/1.json
   def update
     respond_to do |format|
@@ -50,8 +45,7 @@ class DependentsController < ApplicationController
       end
     end
   end
-
-  # DELETE /dependents/1
+# DELETE /dependents/1
   # DELETE /dependents/1.json
   def destroy
     @dependent.destroy
@@ -60,14 +54,23 @@ class DependentsController < ApplicationController
       format.json { head :no_content }
     end
   end
-
-  private
-    # Use callbacks to share common setup or constraints between actions.
+private
+    def user_login
+      unless current_user.present?
+        flash[:notice] = 'Você precisa efetuar o login antes de cadastrar um produto.'
+        redirect_to root_path
+      end
+      puts action_name
+      if action_name == 'edit' or action_name == 'destroy'
+        flash[:notice] = 'Você não é o responsável pelo cadastro.'
+        redirect_to root_path if @dependent.user_id != current_user.id
+      end
+    end
+# Use callbacks to share common setup or constraints between actions.
     def set_dependent
       @dependent = Dependent.find(params[:id])
     end
-
-    # Never trust parameters from the scary internet, only allow the white list through.
+# Never trust parameters from the scary internet, only allow the white list through.
     def dependent_params
       params.require(:dependent).permit(:name, :kinship_type, :image)
     end
