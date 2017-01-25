@@ -5,7 +5,3 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-@user = User.create(email: 'marcelo@ntzholding.com.br', password: '123abc@')
-10.times do |i|
-  Dependents.create(name: 'Dependents name', kinship_type: 'Filho', user_id: @user.id)
-end
