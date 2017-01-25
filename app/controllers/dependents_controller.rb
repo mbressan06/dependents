@@ -1,6 +1,6 @@
 class DependentsController < ApplicationController
   before_action :set_dependent, only: [:show, :edit, :update, :destroy]
-  before_action :user_login, only: [:new, :create, :edit, :destroy]
+  before_action :user_login, only: [:show, :new, :create, :edit, :destroy]
 # GET /dependents
   # GET /dependents.json
   def index
@@ -61,7 +61,7 @@ private
         redirect_to root_path
       end
       puts action_name
-      if action_name == 'edit' or action_name == 'destroy'
+      if action_name == 'edit' or action_name == 'destroy' or action_name == 'show' or action_name == 'new'
         flash[:notice] = 'Você não é o responsável pelo cadastro.'
         redirect_to root_path if @dependent.user_id != current_user.id
       end
