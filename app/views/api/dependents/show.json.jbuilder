@@ -1,0 +1,1 @@
+json.partial! "api/dependents/dependent", dependent: @dependent

@@ -1,0 +1,1 @@
+json.array! @dependents, partial: 'api/dependents/dependent', as: :dependent
