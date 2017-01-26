@@ -1,0 +1,25 @@
+- if current_user
+  p#notice
+    = notice
+  h1
+    | Listing Dependents
+  table.table-striped.table.table-responsive
+    thead
+      tr
+        th Foto
+        th Name
+        th Kinship type
+        th[colspan="3"] Actions
+    tbody
+      - current_user.dependents.each do |dependent|
+        tr
+          td = image_tag(dependent.image.url(:thumb), width: 40)
+          td = dependent.name
+          td = dependent.kinship_type
+          td = link_to 'Show', dependent
+          td = link_to 'Edit', edit_dependent_path(dependent)
+          td = link_to 'Destroy', dependent, method: :delete, data: { confirm: 'Are you sure?' }
+  br
+  = link_to 'New Dependent', new_dependent_path
+- else
+  p#notice Need to login

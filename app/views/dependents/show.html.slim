@@ -1,0 +1,14 @@
+p#notice
+  = notice
+p
+  strong
+    | Name:
+  = @dependent.name
+p
+  strong
+    | Kinship type:
+  = @dependent.kinship_type
+= image_tag(@dependent.image.url(:small), width: 168)
+= link_to 'Edit', edit_dependent_path(@dependent)
+|  | 
+= link_to 'Back', dependents_path

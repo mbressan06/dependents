@@ -1,0 +1,24 @@
+= form_for(@dependent) do |f|
+  - if @dependent.errors.any?
+    #error_explanation
+      h2
+        = pluralize(@dependent.errors.count, "error")
+        |  prohibited this dependent from being saved:
+      ul
+        - @dependent.errors.full_messages.each do |message|
+          li
+            = message
+  .field
+    = f.label :name
+    br
+    = f.text_field :name
+  .field
+    = f.label :kinship_type
+    br
+    = f.text_field :kinship_type
+  .field
+    = f.label :image
+    br
+    = f.file_field :image
+  .actions
+    = f.submit
