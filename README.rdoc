@@ -1,9 +1,4 @@
-== README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
+== Dependents App README
 
 * Ruby version
     Ruby 2.3.1/Rails 4.2.7.1
@@ -33,5 +28,5 @@ Things you may want to cover:
       $ bin/delayed_job stop
 
 * Deployment instructions
-  Not yet...
+    Not yet...
 
