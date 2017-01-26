@@ -8,10 +8,15 @@ class User < ActiveRecord::Base
   validates :document, uniqueness: true
   validate :document_input
 
-
+  def confirm!
+    welcome_message
+    super
+  end
 
   private
-
+  def welcome_message
+    ::Devise.mailer.delay.welcome_instructions(self)
+  end
   def document_input
     return if document.blank?
     valid = CPF.valid?(document)
