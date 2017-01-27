@@ -3,8 +3,8 @@ module Api
 
     private
 
-      def dependents_params
-        params.require(:dependents).permit(:name)
+      def user_params
+        params.require(:user).permit(:name)
       end
 
       def query_params

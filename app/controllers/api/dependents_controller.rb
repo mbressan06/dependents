@@ -3,8 +3,8 @@ module Api
 
     private
 
-      def artist_params
-        params.require(:artist).permit(:name)
+      def dependents_params
+        params.require(:dependents).permit(:name)
       end
 
       def query_params
