@@ -3,8 +3,8 @@ module Api
 
     private
 
-      def artist_params
-        params.require(:artist).permit(:name)
+      def user_params
+        params.require(:user).permit(:name)
       end
 
       def query_params

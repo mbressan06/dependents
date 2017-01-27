@@ -1,10 +1,15 @@
 class DependentsController < ApplicationController
   before_action :set_dependent, only: [:show, :edit, :update, :destroy]
   before_action :user_login, only: [:show, :new, :create, :edit, :destroy]
+
 # GET /dependents
   # GET /dependents.json
   def index
-    @dependents = Dependent.all
+    if current_user
+      @dependents = Dependent.all
+    else
+      redirect_to new_user_session_path
+    end
   end
 # GET /dependents/1
   # GET /dependents/1.json
