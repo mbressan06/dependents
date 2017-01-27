@@ -17,10 +17,10 @@ module Devise
       handle_asynchronously :send_unlock_instructions
     end
 
-    module Invitable
-      alias_method :deliver_invitation_without_delay, :deliver_invitation
-      handle_asynchronously :deliver_invitation
-    end
+    #module Invitable
+    #  alias_method :deliver_invitation_without_delay, :deliver_invitation
+    #  handle_asynchronously :deliver_invitation
+    #end
 
   end
 
