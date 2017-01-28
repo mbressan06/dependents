@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   root 'dependents#index'
 
   namespace :api do
+    post 'auth_user' => 'authentication#authenticate_user'
     resources :users, :dependents
   end
   # Example of regular route:

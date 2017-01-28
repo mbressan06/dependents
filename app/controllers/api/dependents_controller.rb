@@ -1,10 +1,15 @@
 module Api
   class DependentsController < Api::BaseController
+    before_filter :authenticate_request!
+
+    def index
+      render json: {'logged_in' => true}
+    end
 
     private
 
-      def user_params
-        params.require(:user).permit(:name)
+      def dependents_params
+        params.require(:dependents).permit(:name)
       end
 
       def query_params
