@@ -24,6 +24,7 @@ gem 'devise_token_auth'
 gem 'omniauth'
 gem 'delayed_job_active_record'
 gem 'daemons'
+gem 'jwt'
 
 
 gem 'kaminari'
